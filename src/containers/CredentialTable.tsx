@@ -40,7 +40,7 @@ const CredentialTable = () => {
           drivingClass = JSON.parse(result.suppliedCredentials[0].credentialSubject.data.hasIDDocument?.hasIDDocument.idClass).drivingClass;
         }
 
-        setVCData(prevState => [...prevState, {token, validatedResult: result, drivingClass}])
+        setVCData(prevState => [...prevState, {token, validatedResult: result}])
       }
       if (credentialShareResponseToken) {
         credentialShareResponseToken.map((token: string) => {
@@ -59,7 +59,6 @@ const CredentialTable = () => {
                 <tr>
                   <th>Index</th>
                   <th>Name</th>
-                  <th>Driving Class</th>
                   <th>Validated</th>
                   {/* <th>Action</th> */}
                 </tr>
@@ -70,7 +69,6 @@ const CredentialTable = () => {
                     <tr>
                     <th scope="row">{index+1}</th>
                     <td>{data.validatedResult.suppliedCredentials[0].credentialSubject.data.givenName}</td>
-                    <td>{data.drivingClass ? <p>{data.drivingClass}</p>:<p> No Driving Class </p> }</td>
                     <td>{data.validatedResult.isValid ? <img src={CheckCircle} alt='check' style={{height: '28px'}} /> : 
                         <img src={CrossCircle} alt='cross' style={{height: '28px'}} />
                     }
