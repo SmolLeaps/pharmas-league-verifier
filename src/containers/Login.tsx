@@ -18,13 +18,12 @@ const Login: FC = () => {
   }
 
   return (
-    <div className='Login'>
+    <div className='Login' >
       <div className='Form'>
-        <h1 className='Title'>Verifier: Pharma's League Login</h1>
-        <p className='Info'>
-        </p>
+        <h1 className='Title'>Admin Login</h1>
+        <p className='Info'>Here, an adminstrator of Pharma's League would be able to see the list of validated VCs shared with the reseller.</p>
 
-        <Form style={{ width: 280 }}>
+        <Form style={{ width: "100%" }} className="text-center">
           <Form.Group controlId="username">
             <Form.Label>Username</Form.Label>
             <FormControl

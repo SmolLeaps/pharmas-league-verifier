@@ -10,9 +10,9 @@ const Dashboard: FC = () => {
     <div className="Home">
       <Card>
         <Card.Header as="h5">
-          Applicants' Credentials Table
+          List of Authorized Resellers
         </Card.Header>
-        <Card.Body children={<CredentialTable />} />
+        <Card.Body children={<div><p>Resellers with a checkmark under 'Validated' have received authorization from respective pharmaceutical facilities to resell their drugs. They are now authorized to sell their products on Pharma's League.</p><CredentialTable /></div>} />
       </Card>
     </div>
   );

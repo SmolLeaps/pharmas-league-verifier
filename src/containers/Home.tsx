@@ -8,8 +8,9 @@ const Home: React.FC = () => {
     const [showSignUp, setShowSignUp] = useState<boolean>(false)
 
     return (
-        <div className='page-form'>
+        <div className='page-form' style={{textAlign: "center"}}>
             { showSignUp ? <Signup setShowSignUp={setShowSignUp}/> : <Login/> }
+            <br />
             { showSignUp ? <small>Your company already signed up with verifier?<a href='#' onClick={() => setShowSignUp(false)}> Log in here </a></small>: <small>Want to register for an account for your company to verify credentials?<a href='#' onClick={() => setShowSignUp(true)}> Sign up here </a></small>}
         </div>
     )
