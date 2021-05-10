@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./src/assets/images/icons/company-name.png" alt="logo" width="60%">
+  <img src="./src/assets/images/icons/company-name-white.png" alt="logo" width="60%">
 
   <h3 align="center">Pharma's League - Verifier Repository</h3>
 
