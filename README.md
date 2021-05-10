@@ -45,7 +45,7 @@ The Verifier Repository represents the Pharma's League marketplace - a trusted p
 
 As of now, the current implementation is a simple admin dashboard for Pharma's League's administrators to verify resellers to be able to sell items on the marketplace.
 
-In the future, we would like to build an e-commerce interface as well as buyer and seller authentication for the buying and selling of drugs to take place on the platform
+In the future, we would like to build an e-commerce interface as well as buyer and seller authentication. This is to faciliate a functioning marketplace for the buying and selling of drugs to take place on the platform.
 
 ## About The Project
 
@@ -118,7 +118,7 @@ REACT_APP_WALLET_URL=http://localhost:3001
 
 #### Sequence
 
-Run the Issuer Repository, then the Holder Repository, then lastly the Verifier Repository.
+Run the [Issuer Repository](https://github.com/SmolLeaps/pharmas-league-issuer), then the [Holder Repository](https://github.com/SmolLeaps/pharmas-league-holder), then lastly the [Verifier Repository](https://github.com/SmolLeaps/pharmas-league-verifier).
 
 ## Roadmap
 
